@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WIMS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  
+  
+<body>
+<h1>Plateforme Euler-WIMS</h1>
+
+<h2>Accès à la classe virtuelle</h2>
+<p>Pour accéder à la classe virtuelle 2GT4 de la plateforme WIMS, cliquer sur <a href="https://euler-ressources.ac-versailles.fr/wims/wims.cgi?module=adm/class/classes&type=authparticipant&class=8471291&subclass=yes" target="_blank">ce lien</a>.</p>
+<p>Une fois la nouvelle page ouverte :
+<ol>
+  <li>Entrer son identifiant et son mot de passe</li>
+  <li>Accepter les conditions générales d'utilisation (CGU)</li>
+</ol>
+</p>
+<p>TOUTES LES FEUILLES D'EXERCICES SONT À TRAITER ! Celles-ci sont classées par ordre de difficulté. </p>
+
+<h2>Aides</h2>
+
+<div>
+  <p>Cliquer <a id="aideLien" href="#">ici</a> pour afficher l'aide pour la première feuille d'exercices. <br>
+  Pour les autres feuilles, utiliser le cahier de cours ! Il y a toutes les formules et exemples dont vous aurez besoin.</p>
+  <div id="aide" class="cache cours">
+    <p>On considère un repère orthonormé \((O,I,J)\) du plan. Soient \(A(x_A ; y_A)\) et \(B(x_B ; y_B)\) deux points du plan.</p>
+
+    <h3>Milieu</h3>
+    <p>On note \( M(x_M ; y_M) \) le milieu du segment \( [AB] \).</p>
+    <p>Les coordonnées du point \(M \) sont : \( x_M = \dfrac{x_A + x_B}{2} \) et \( y_M = \dfrac{y_A + y_B}{2} \).</p>
+
+    <h3>Distance / Longueur</h3>
+    <p>La longueur \( AB \) est donnée par : \( AB = \sqrt{(x_B-x_A)^2 + (y_B-y_A)^2} \).</p>
+
+    <h3>Un exemple</h3>
+    <p>On considère les points \( A(2;1) \) et \( A(4;-8) \).</p>
+
+    <p>
+      <strong>Milieu :</strong> On note \(M(x_M ; y_M)\) le milieu du segment \([AB]\). <br>
+    On a : \( x_M = \dfrac{x_A+x_B}{2} = \dfrac{2+4}{2} = \dfrac{6}{2} = 3 \) ; \( y_M = \dfrac{y_A+y_B}{2} = \dfrac{1+(-8)}{2} = \dfrac{-7}{2} = -3,5 \). <br>
+  Le point \(M\) a pour coordonnées \((3;-3,5)\).
+    </p>
+
+  <p>
+    <strong>Longueur :</strong> On a : <br>
+  \( AB = \sqrt{(x_B-x_A)^2 + (y_B-y_A)^2} = \sqrt{(4-2)^2 + (-8-1)^2} = \sqrt{2^2 + (-9)^2} = \sqrt{4 + 81} = \sqrt{85}\). <br>
+  \(AB \approx 9,23 \text{ unités} \) (ce résulat est donné au cenitème près...).
+</p>
+  </div>
+
+</div>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

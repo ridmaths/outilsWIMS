@@ -1,0 +1,42 @@
+body{
+  background-color: #ecf0f1;
+  font-family: "Trebuchet MS";
+  border: 2px dashed black;
+  padding: 20px;
+  padding-top: 0px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+a{
+  text-decoration: none;
+  color: #e74c3c;
+}
+
+a:hover{
+  color: white;
+  background-color: #2980b9;
+}
+
+h1{
+  text-align: center;
+}
+
+
+.cours{
+  color: SeaGreen;
+  border: 2px solid;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.cours h3{
+  text-align: left;
+  text-decoration: underline;
+  
+}
+
+.cache{
+  display: none;
+}
