@@ -19,6 +19,9 @@ Le programme wimsEleves.py permet de transformer un csv fourni par Python en csv
 # documentClasseCodes
 
 Le programme docElevesWims.py permet de générer un document tex/pdf avec les informations de chaque élève. 
+
 On part du fichier elevesWIMS.py généré par le programme précédent et on met en forme le tout.
+
 Les fichiers obtenus à la fin sont listeElevesWims.tex et listeElevesWims.pdf
+
 Les constantes utilisées sont : la classe, le lien du site et le nom du fichier CSV
