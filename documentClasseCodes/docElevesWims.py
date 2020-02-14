@@ -1,12 +1,14 @@
 import os
 
-# Pas de fonctions !
+# Pas de fonctions ! 
+
+# Des constantes :
 
 nomFichier = "elevesWIMS.csv"
-lienWims = "icn123.rf.gd/wims"
+lienWims = "liendusite"
+classe = "Seconde 12"
 
 ## On récupère les données élève sous forme de dictionnaire
-
 
 fichier = open(nomFichier,"r",encoding="windows-1252")
 #fichier = open(nomFichier,"r",encoding="UTF-8")
@@ -20,6 +22,9 @@ for eleve in dataEleves:
 	password = eleve.split(",")[3]
 	dictEleves.append({"login": login, "password": password})
 
+# On obtient alors un dictionnaire avec les données de chaque élève (login et password)
+
+
 ## On génère le contenu
 
 contenu = ""
@@ -29,7 +34,8 @@ for obj in dictEleves:
 
 \\medskip
 
-Pour accéder à la classe virtuelle, ouvrir un navigateur web et entrer l'adresse suivante : {lienWims}
+Pour accéder à la classe virtuelle, ouvrir un navigateur web et entrer l'adresse suivante : \\par 
+{lienWims}
 
 \\medskip
 
@@ -47,7 +53,10 @@ Voici vos identifiants pour vous connecter :
 \\vspace{{1cm}}
 '''
 
-## On construit le document
+## FIN CONTENU
+
+
+## On construit le document latex correspondant
 
 document = '''\\documentclass[12pt,a4paper]{article} 
   
@@ -64,7 +73,7 @@ document = '''\\documentclass[12pt,a4paper]{article}
  
 \\begin{document}
 
-\\begin{center} \\large \\textbf{Liste des élèves pour WIMS - 2GT4} \\end{center}
+\\begin{center} \\large \\textbf{Liste des élèves pour WIMS - '''+classe+'''} \\end{center}
 
 \\bigskip
 

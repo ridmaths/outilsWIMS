@@ -1,5 +1,7 @@
 ## On part du csv eleves pour obtenir le csv à mettre dans wims
 
+## Le csv eleves0 est obtenu à l'aide de PRONOTE
+
 import random
 
 # FONCTIONS UTILES
